@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#12345a">
+  <title>NTFY SARL | Maison des Techniciens</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #243247;
+      background: #f4f7fb;
+    }
+    header {
+      background: #12345a;
+      color: white;
+      padding: 28px 18px;
+      text-align: center;
+    }
+    header h1 { margin: 0; font-size: 27px; }
+    header p { margin-bottom: 0; }
+    nav {
+      background: #0b213b;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 5px 8px;
+      display: inline-block;
+      text-decoration: none;
+    }
+    main { max-width: 950px; margin: auto; padding: 20px; }
+    section {
+      background: white;
+      padding: 22px;
+      margin: 18px 0;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px #0000000d;
+    }
+    h2 { color: #12345a; }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+    }
+    .service {
+      background: #edf3fa;
+      padding: 14px;
+      border-radius: 8px;
+    }
+    .btn {
+      display: inline-block;
+      background: #16834a;
+      color: white;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 7px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 6px 0 14px;
+      border: 1px solid #ccd5df;
+      border-radius: 6px;
+      font: inherit;
+    }
+    button {
+      background: #12345a;
+      color: white;
+      border: 0;
+      border-radius: 7px;
+      padding: 13px 18px;
+      font-size: 16px;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      background: #0b213b;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MAISON DES TECHNICIENS NTFY SARL</h1>
+    <p>Votre partenaire technique de confiance 🇨🇲</p>
+    <p>Innovation • Qualité • Professionnalisme</p>
+  </header>
+
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#services">Services</a>
+    <a href="#devis">Devis</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="accueil">
+      <h2>Bienvenue chez NTFY SARL</h2>
+      <p>Entreprise camerounaise spécialisée dans les études, la construction et les solutions techniques pour les particuliers, entreprises et institutions.</p>
+      <p>Nous transformons vos idées en réalisations durables grâce à des professionnels compétents.</p>
+      <a class="btn" href="https://wa.me/237690266433?text=Bonjour%20NTFY%20SARL%2C%20je%20souhaite%20des%20informations." target="_blank" rel="noopener">Nous contacter sur WhatsApp</a>
+    </section>
+
+    <section id="services">
+      <h2>Nos services</h2>
+      <div class="services">
+        <div class="service">🏗️ Études et plans architecturaux</div>
+        <div class="service">🏠 Construction et rénovation</div>
+        <div class="service">⚡ Installations électriques</div>
+        <div class="service">☀️ Énergie solaire</div>
+        <div class="service">🚿 Plomberie et forage</div>
+        <div class="service">📹 Vidéosurveillance</div>
+        <div class="service">🛠️ Maintenance technique</div>
+        <div class="service">🎨 Peinture et finitions</div>
+        <div class="service">🔩 Soudure et menuiserie</div>
+        <div class="service">🛒 Vente de matériel technique</div>
+      </div>
+    </section>
+
+    <section id="devis">
+      <h2>Demander un devis</h2>
+      <p>Remplissez votre demande : WhatsApp s'ouvrira pour vous permettre de nous l'envoyer.</p>
+      <form id="devisForm">
+        <label for="nom">Votre nom</label>
+        <input id="nom" required placeholder="Votre nom complet">
+        <label for="telephone">Votre téléphone</label>
+        <input id="telephone" type="tel" placeholder="Votre numéro">
+        <label for="service">Service souhaité</label>
+        <select id="service" required>
+          <option value="">Choisir un service</option>
+          <option>Construction</option>
+          <option>Études architecturales</option>
+          <option>Électricité</option>
+          <option>Énergie solaire</option>
+          <option>Plomberie</option>
+          <option>Vidéosurveillance</option>
+          <option>Maintenance</option>
+          <option>Vente de matériel</option>
+          <option>Autre</option>
+        </select>
+        <label for="details">Description du projet</label>
+        <textarea id="details" rows="4" required placeholder="Décrivez votre besoin"></textarea>
+        <button type="submit">Envoyer la demande</button>
+      </form>
+    </section>
+
+    <section id="contact">
+      <h2>Nous contacter</h2>
+      <p><strong>Téléphone / WhatsApp :</strong> +237 690 266 433</p>
+      <p><strong>Email :</strong> Ntfy30@gmail.com</p>
+      <p><strong>Localisation :</strong> Yaoundé – Nkometou Centre, Cameroun</p>
+      <a class="btn" href="https://wa.me/237690266433" target="_blank" rel="noopener">Discuter avec un technicien</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Maison des Techniciens NTFY SARL</p>
+    <p>Ensemble, construisons l'avenir.</p>
+  </footer>
+
+  <script>
+    document.getElementById("devisForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const nom = document.getElementById("nom").value.trim();
+      const telephone = document.getElementById("telephone").value.trim();
+      const service = document.getElementById("service").value;
+      const details = document.getElementById("details").value.trim();
+      const message = "Bonjour NTFY SARL !%0A" +
+        "Demande de devis%0A" +
+        "Nom : " + encodeURIComponent(nom) + "%0A" +
+        "Téléphone : " + encodeURIComponent(telephone) + "%0A" +
+        "Service : " + encodeURIComponent(service) + "%0A" +
+        "Projet : " + encodeURIComponent(details);
+      window.open("https://wa.me/237690266433?text=" + message, "_blank");
+    });
+  </script>
+</body>
+</html>
